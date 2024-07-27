@@ -56,8 +56,3 @@ class Vibes:
 
 load_dotenv()
 ID, SECRET = os.getenv("ID"), os.getenv("SECRET")
-
-vibes = Vibes(ID, SECRET)
-stats = vibes.artistStats("OneRepublic")
-print(vibes.artistTopTracks(stats[-1]))
-print(vibes.artistAlbums(stats[-1]))
